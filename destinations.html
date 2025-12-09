@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подорожі — Напрямки</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="https://image.similarpng.com/file/similarpng/original-picture/2021/08/Illustration-of-Travel-agency-logo-design-template-on-transparent-background-PNG.png" alt="логотип">
+        </div>
+        <nav class="menu">
+            <ul class="menu-links">
+                <li class="menu-item menu-item-link"><a href="index.html">Головна</a></li>
+                <li class="menu-item menu-item-link"><a href="destinations.html" class="active-page">Напрямки</a></li>
+                <li class="menu-item menu-item-link"><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destinations">
+        <h2 class="destinations-title">Популярні напрямки</h2>
+        <div class="destinations-container">
+            
+            <div class="destination" data-destination-id="paris">
+                <img class="destination-img" src="https://navkolosvitu.net.ua/wp-content/uploads/2014/06/1380311620-381416-1920x1200.jpg" alt="Напрямок Париж">
+                <h3 class="destination-title">Париж, Франція</h3>
+                <p class="destination-text">Романтичні прогулянки та історичні пам'ятки</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="newyork">
+                <img class="destination-img" src="https://www.airpano.ru/files/video-new-york-2015/images/image1.jpg" alt="Напрямок Нью-Йорк">
+                <h3 class="destination-title">Нью-Йорк, США</h3>
+                <p class="destination-text">Місто, що ніколи не спить</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="tokyo">
+                <img class="destination-img" src="https://s0.rbk.ru/v6_top_pics/media/img/9/89/755434845112899.png" alt="Напрямок Токіо">
+                <h3 class="destination-title">Токіо, Японія</h3>
+                <p class="destination-text">Сучасна культура й традиційні цінності</p>
+                <button class="details-button">Деталі</button>
+            </div>
+
+            <div class="destination" data-destination-id="rome">
+                <img class="destination-img" src="https://tripmydream.cc/travelhub/travel/region/1/1.jpg" alt="Напрямок Рим">
+                <h3 class="destination-title">Рим, Італія</h3>
+                <p class="destination-text">Вічне місто: історія та архітектура</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="bali">
+                <img class="destination-img" src="https://comfort.travel/wp-content/uploads/2019/01/bali-1071x643.jpeg" alt="Напрямок Балі">
+                <h3 class="destination-title">Балі, Індонезія</h3>
+                <p class="destination-text">Острів Богів: пляжі та вулкани</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="london">
+                <img class="destination-img" src="https://piligrim.ua/wp-content/uploads/2016/01/london_velikobritaniya_01.jpg" alt="Напрямок Лондон">
+                <h3 class="destination-title">Лондон, Велика Британія</h3>
+                <p class="destination-text">Традиції та сучасність на берегах Темзи</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="dubai">
+                <img class="destination-img" src="https://www.teztour.ua/static/photos/pages/1170/88/889/4151479775a27ec4886c71.jpg" alt="Напрямок Дубай">
+                <h3 class="destination-title">Дубай, ОАЕ</h3>
+                <p class="destination-text">Футуристичний оазис у пустелі</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="prague">
+                <img class="destination-img" src="https://marakuya.kiev.ua/images/czech/czech-prague-big1.jpg" alt="Напрямок Прага">
+                <h3 class="destination-title">Прага, Чехія</h3>
+                <p class="destination-text">Місто ста мостів та казкових замків</p>
+                <button class="details-button">Деталі</button>
+            </div>
+            <div class="destination" data-destination-id="kyiv">
+                <img class="destination-img" src="https://anga.ua/ifiles/images/kyiv/tsikavi_fakty_pro_kyiv/Screenshot_2(1).png" alt="Напрямок Київ">
+                <h3 class="destination-title">Київ, Україна</h3>
+                <p class="destination-text">Золоті куполи та Дніпрові схили</p>
+                <button class="details-button">Деталі</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-info">
+            &copy; 2024 Подорожі. Автор: Кулачко Серафим. Всі права захищено.
+        </div>
+    </footer>
+
+    <div id="destinationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Назва напрямку</h2>
+            <p id="modal-description">Тут буде детальний опис, який ви можете завантажувати динамічно.</p>
+            <div class="modal-details">
+                <p><strong>Середня температура:</strong> <span id="modal-temp"></span></p>
+                <p><strong>Рекомендований час:</strong> <span id="modal-time"></span></p>
+                <p><strong>Вартість туру (приблизно):</strong> <span id="modal-price"></span></p>
+            </div>
+            <button class="section-main-button modal-booking-button">Замовити тур</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
